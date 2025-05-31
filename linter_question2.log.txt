@@ -1,0 +1,238 @@
+>> nv) PS C:\Users\ROG\Django-poll-app>
+************* Module seeder
+seeder.py:2:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+seeder.py:21:8: W0612: Unused variable 'u' (unused-variable)
+seeder.py:58:12: W0612: Unused variable 'c' (unused-variable)
+seeder.py:87:12: W0612: Unused variable 'v' (unused-variable)
+seeder.py:2:0: C0411: third party import "django.contrib.auth.models.User" should be placed before first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:3:0: C0411: standard import "datetime" should be placed before third party import "django.contrib.auth.models.User" and first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:4:0: C0411: standard import "random" should be placed before third party import "django.contrib.auth.models.User" and first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:5:0: C0411: standard import "time" should be placed before third party import "django.contrib.auth.models.User" and first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:6:0: C0411: third party import "faker.Faker" should be placed before first party import "polls.models.Choice"  (wrong-import-order)
+************* Module test_poll_e2e
+test_poll_e2e.py:11:0: C0301: Line too long (101/100) (line-too-long)
+test_poll_e2e.py:36:0: C0301: Line too long (108/100) (line-too-long)
+test_poll_e2e.py:48:0: C0301: Line too long (109/100) (line-too-long)
+test_poll_e2e.py:62:0: C0301: Line too long (110/100) (line-too-long)
+test_poll_e2e.py:72:0: C0301: Line too long (125/100) (line-too-long)
+test_poll_e2e.py:97:0: C0301: Line too long (110/100) (line-too-long)
+test_poll_e2e.py:104:0: C0301: Line too long (131/100) (line-too-long)
+test_poll_e2e.py:108:0: C0301: Line too long (144/100) (line-too-long)
+test_poll_e2e.py:110:0: C0301: Line too long (112/100) (line-too-long)
+test_poll_e2e.py:115:0: C0301: Line too long (106/100) (line-too-long)
+************* Module accounts.views
+accounts\views.py:58:0: C0301: Line too long (114/100) (line-too-long)
+accounts\views.py:64:0: C0301: Line too long (134/100) (line-too-long)
+accounts\views.py:3:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+accounts\views.py:15:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts\views.py:56:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts\views.py:5:0: C0411: third party import "django.contrib.messages" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+accounts\views.py:6:0: C0411: third party import "django.http.HttpResponse" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+************* Module polls.models
+polls\models.py:1:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+polls\models.py:4:0: C0411: standard import "secrets" should be placed before third party imports "django.contrib.auth.models.User", "django.db.models", "django.utils.timezone" (wrong-import-order)
+************* Module polls.tests
+polls\tests.py:2:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+************* Module polls.test_q4_unit
+polls\test_q4_unit.py:13:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+************* Module polls.views
+polls\views.py:72:0: C0301: Line too long (128/100) (line-too-long)
+polls\views.py:129:0: C0301: Line too long (116/100) (line-too-long)
+polls\views.py:153:0: C0301: Line too long (118/100) (line-too-long)
+polls\views.py:173:0: C0301: Line too long (110/100) (line-too-long)
+polls\views.py:196:0: C0301: Line too long (114/100) (line-too-long)
+polls\views.py:207:0: C0301: Line too long (105/100) (line-too-long)
+polls\views.py:59:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:199:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:218:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:8:0: C0411: third party import "django.http.HttpResponse" should be placed before local imports "models.Poll", "forms.PollAddForm" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 8.99/10 (previous run: 8.91/10, +0.09)
+
+(venv) PS C:\Users\ROG\Django-poll-app> pylint . --load-plugins=pylint_django --django-settings-module=pollme.settings
+>>
+************* Module seeder
+seeder.py:2:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+seeder.py:58:12: W0612: Unused variable 'c' (unused-variable)
+seeder.py:87:12: W0612: Unused variable 'v' (unused-variable)
+seeder.py:2:0: C0411: third party import "django.contrib.auth.models.User" should be placed before first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:3:0: C0411: standard import "datetime" should be placed before third party import "django.contrib.auth.models.User" and first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:4:0: C0411: standard import "random" should be placed before third party import "django.contrib.auth.models.User" and first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:5:0: C0411: standard import "time" should be placed before third party import "django.contrib.auth.models.User" and first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:6:0: C0411: third party import "faker.Faker" should be placed before first party import "polls.models.Choice"  (wrong-import-order)      
+************* Module test_poll_e2e
+test_poll_e2e.py:11:0: C0301: Line too long (101/100) (line-too-long)
+test_poll_e2e.py:36:0: C0301: Line too long (108/100) (line-too-long)
+test_poll_e2e.py:48:0: C0301: Line too long (109/100) (line-too-long)
+test_poll_e2e.py:62:0: C0301: Line too long (110/100) (line-too-long)
+test_poll_e2e.py:72:0: C0301: Line too long (125/100) (line-too-long)
+test_poll_e2e.py:97:0: C0301: Line too long (110/100) (line-too-long)
+test_poll_e2e.py:104:0: C0301: Line too long (131/100) (line-too-long)
+test_poll_e2e.py:108:0: C0301: Line too long (144/100) (line-too-long)
+test_poll_e2e.py:110:0: C0301: Line too long (112/100) (line-too-long)
+test_poll_e2e.py:115:0: C0301: Line too long (106/100) (line-too-long)
+************* Module accounts.views
+accounts\views.py:58:0: C0301: Line too long (114/100) (line-too-long)
+accounts\views.py:64:0: C0301: Line too long (134/100) (line-too-long)
+accounts\views.py:3:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+accounts\views.py:15:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts\views.py:56:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts\views.py:5:0: C0411: third party import "django.contrib.messages" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+accounts\views.py:6:0: C0411: third party import "django.http.HttpResponse" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+************* Module polls.models
+polls\models.py:1:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+polls\models.py:4:0: C0411: standard import "secrets" should be placed before third party imports "django.contrib.auth.models.User", "django.db.models", "django.utils.timezone" (wrong-import-order)
+************* Module polls.tests
+polls\tests.py:2:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+************* Module polls.test_q4_unit
+polls\test_q4_unit.py:13:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+************* Module polls.views
+polls\views.py:72:0: C0301: Line too long (128/100) (line-too-long)
+polls\views.py:129:0: C0301: Line too long (116/100) (line-too-long)
+polls\views.py:153:0: C0301: Line too long (118/100) (line-too-long)
+polls\views.py:173:0: C0301: Line too long (110/100) (line-too-long)
+polls\views.py:196:0: C0301: Line too long (114/100) (line-too-long)
+polls\views.py:207:0: C0301: Line too long (105/100) (line-too-long)
+polls\views.py:59:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:199:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:218:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:8:0: C0411: third party import "django.http.HttpResponse" should be placed before local imports "models.Poll", "forms.PollAddForm" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 9.01/10 (previous run: 8.99/10, +0.02)
+
+(venv) PS C:\Users\ROG\Django-poll-app> pylint . --load-plugins=pylint_django --django-settings-module=pollme.settings
+>>
+************* Module seeder
+seeder.py:62:12: W0612: Unused variable 'c' (unused-variable)
+seeder.py:91:12: W0612: Unused variable 'v' (unused-variable)
+************* Module test_poll_e2e
+test_poll_e2e.py:11:0: C0301: Line too long (101/100) (line-too-long)
+test_poll_e2e.py:36:0: C0301: Line too long (108/100) (line-too-long)
+test_poll_e2e.py:48:0: C0301: Line too long (109/100) (line-too-long)
+test_poll_e2e.py:62:0: C0301: Line too long (110/100) (line-too-long)
+test_poll_e2e.py:72:0: C0301: Line too long (125/100) (line-too-long)
+test_poll_e2e.py:97:0: C0301: Line too long (110/100) (line-too-long)
+test_poll_e2e.py:104:0: C0301: Line too long (131/100) (line-too-long)
+test_poll_e2e.py:108:0: C0301: Line too long (144/100) (line-too-long)
+test_poll_e2e.py:110:0: C0301: Line too long (112/100) (line-too-long)
+test_poll_e2e.py:115:0: C0301: Line too long (106/100) (line-too-long)
+************* Module accounts.views
+accounts\views.py:58:0: C0301: Line too long (114/100) (line-too-long)
+accounts\views.py:64:0: C0301: Line too long (134/100) (line-too-long)
+accounts\views.py:3:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+accounts\views.py:15:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts\views.py:56:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts\views.py:5:0: C0411: third party import "django.contrib.messages" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+accounts\views.py:6:0: C0411: third party import "django.http.HttpResponse" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+************* Module polls.models
+polls\models.py:1:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+polls\models.py:4:0: C0411: standard import "secrets" should be placed before third party imports "django.contrib.auth.models.User", "django.db.models", "django.utils.timezone" (wrong-import-order)
+************* Module polls.tests
+polls\tests.py:2:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+************* Module polls.test_q4_unit
+polls\test_q4_unit.py:13:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+************* Module polls.views
+polls\views.py:72:0: C0301: Line too long (128/100) (line-too-long)
+polls\views.py:129:0: C0301: Line too long (116/100) (line-too-long)
+polls\views.py:153:0: C0301: Line too long (118/100) (line-too-long)
+polls\views.py:173:0: C0301: Line too long (110/100) (line-too-long)
+polls\views.py:196:0: C0301: Line too long (114/100) (line-too-long)
+polls\views.py:207:0: C0301: Line too long (105/100) (line-too-long)
+polls\views.py:59:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:199:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:218:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:8:0: C0411: third party import "django.http.HttpResponse" should be placed before local imports "models.Poll", "forms.PollAddForm" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 9.18/10 (previous run: 9.01/10, +0.17)
+
+(venv) PS C:\Users\ROG\Django-poll-app> pylint . --load-plugins=pylint_django --django-settings-module=pollme.settings
+>>
+************* Module seeder
+seeder.py:62:12: W0612: Unused variable 'c' (unused-variable)
+seeder.py:91:12: W0612: Unused variable 'v' (unused-variable)
+************* Module test_poll_e2e
+test_poll_e2e.py:11:0: C0301: Line too long (101/100) (line-too-long)
+test_poll_e2e.py:36:0: C0301: Line too long (108/100) (line-too-long)
+test_poll_e2e.py:48:0: C0301: Line too long (109/100) (line-too-long)
+test_poll_e2e.py:62:0: C0301: Line too long (110/100) (line-too-long)
+test_poll_e2e.py:72:0: C0301: Line too long (125/100) (line-too-long)
+test_poll_e2e.py:97:0: C0301: Line too long (110/100) (line-too-long)
+test_poll_e2e.py:104:0: C0301: Line too long (131/100) (line-too-long)
+test_poll_e2e.py:108:0: C0301: Line too long (144/100) (line-too-long)
+test_poll_e2e.py:110:0: C0301: Line too long (112/100) (line-too-long)
+test_poll_e2e.py:115:0: C0301: Line too long (106/100) (line-too-long)
+************* Module accounts.views
+accounts\views.py:58:0: C0301: Line too long (114/100) (line-too-long)
+accounts\views.py:64:0: C0301: Line too long (134/100) (line-too-long)
+accounts\views.py:3:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+accounts\views.py:15:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts\views.py:56:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts\views.py:5:0: C0411: third party import "django.contrib.messages" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+accounts\views.py:6:0: C0411: third party import "django.http.HttpResponse" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+************* Module polls.models
+polls\models.py:1:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+polls\models.py:4:0: C0411: standard import "secrets" should be placed before third party imports "django.contrib.auth.models.User", "django.db.models", "django.utils.timezone" (wrong-import-order)
+************* Module polls.tests
+polls\tests.py:2:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+************* Module polls.test_q4_unit
+polls\test_q4_unit.py:13:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+************* Module polls.views
+polls\views.py:134:0: C0301: Line too long (116/100) (line-too-long)
+polls\views.py:158:0: C0301: Line too long (118/100) (line-too-long)
+polls\views.py:178:0: C0301: Line too long (110/100) (line-too-long)
+polls\views.py:201:0: C0301: Line too long (114/100) (line-too-long)
+polls\views.py:212:0: C0301: Line too long (105/100) (line-too-long)
+polls\views.py:59:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:204:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:223:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:8:0: C0411: third party import "django.http.HttpResponse" should be placed before local imports "models.Poll", "forms.PollAddForm" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 9.19/10 (previous run: 9.18/10, +0.02)
+
+(venv) PS C:\Users\ROG\Django-poll-app> pylint . --load-plugins=pylint_django --django-settings-module=pollme.settings
+>>
+************* Module seeder
+seeder.py:62:12: W0612: Unused variable 'c' (unused-variable)
+seeder.py:91:12: W0612: Unused variable 'v' (unused-variable)
+************* Module test_poll_e2e
+test_poll_e2e.py:11:0: C0301: Line too long (101/100) (line-too-long)
+test_poll_e2e.py:36:0: C0301: Line too long (108/100) (line-too-long)
+test_poll_e2e.py:48:0: C0301: Line too long (109/100) (line-too-long)
+test_poll_e2e.py:62:0: C0301: Line too long (110/100) (line-too-long)
+test_poll_e2e.py:72:0: C0301: Line too long (125/100) (line-too-long)
+test_poll_e2e.py:97:0: C0301: Line too long (110/100) (line-too-long)
+test_poll_e2e.py:104:0: C0301: Line too long (131/100) (line-too-long)
+test_poll_e2e.py:108:0: C0301: Line too long (144/100) (line-too-long)
+test_poll_e2e.py:110:0: C0301: Line too long (112/100) (line-too-long)
+test_poll_e2e.py:115:0: C0301: Line too long (106/100) (line-too-long)
+************* Module accounts.views
+accounts\views.py:58:0: C0301: Line too long (114/100) (line-too-long)
+accounts\views.py:64:0: C0301: Line too long (130/100) (line-too-long)
+accounts\views.py:3:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+accounts\views.py:15:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts\views.py:5:0: C0411: third party import "django.contrib.messages" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+accounts\views.py:6:0: C0411: third party import "django.http.HttpResponse" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+************* Module polls.models
+polls\models.py:1:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+polls\models.py:4:0: C0411: standard import "secrets" should be placed before third party imports "django.contrib.auth.models.User", "django.db.models", "django.utils.timezone" (wrong-import-order)
+************* Module polls.tests
+polls\tests.py:2:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+************* Module polls.test_q4_unit
+polls\test_q4_unit.py:13:0: E5142: User model imported from django.contrib.auth.models (imported-auth-user)
+************* Module polls.views
+polls\views.py:134:0: C0301: Line too long (116/100) (line-too-long)
+polls\views.py:158:0: C0301: Line too long (118/100) (line-too-long)
+polls\views.py:178:0: C0301: Line too long (110/100) (line-too-long)
+polls\views.py:201:0: C0301: Line too long (114/100) (line-too-long)
+polls\views.py:212:0: C0301: Line too long (105/100) (line-too-long)
+polls\views.py:59:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:204:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:223:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls\views.py:8:0: C0411: third party import "django.http.HttpResponse" should be placed before local imports "models.Poll", "forms.PollAddForm" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 9.21/10 (previous run: 9.19/10, +0.02)
